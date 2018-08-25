@@ -1,4 +1,7 @@
 html,body{
     height: 100%;
-    margin: 0px;
+    margin: 0;
+    background-color: #e4e7e8;
+    background-size: auto auto;
+    background-origin: padding-box;
 }

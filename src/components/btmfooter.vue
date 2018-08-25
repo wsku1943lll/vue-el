@@ -1,10 +1,12 @@
 <template>
-
+    <el-footer height="30px">
+        <p>Footer</p>
+    </el-footer>
 </template>
 
 <script>
     export default {
-        name: "bottomfooter"
+        name: "btmfotter"
     }
 </script>
 

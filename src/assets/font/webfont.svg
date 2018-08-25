@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+
+<svg>
+<metadata>
+Created by webfont
+</metadata>
+<defs>
+
+<font id="PangMenZhengDao" horiz-adv-x="1057" vert-adv-y="1057" >
+  <font-face
+    
+    font-family="PangMenZhengDao"
+    
+    font-weight="400"
+    
+    font-stretch="normal"
+    
+    units-per-em="1000"
+    
+    ascent="859"
+    
+    descent="-141"
+    
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="uni43" unicode="&#x43;" d="M575 119L575 0L342 0Q276 0 241 7Q118 31 66 144Q32 220 32 332Q32 466 84 550Q122 611 185.50 639Q249 667 349 667L575 667L575 548L365 548Q270 548 226 497Q189 455 189 345Q189 197 246 151Q286 119 371 119L575 119Z"  horiz-adv-x="606" vert-adv-y="1000"  />
+
+    
+    <glyph glyph-name="uni57" unicode="&#x57;" d="M160 667L310 165L450 667L608 667L748 165L898 667L1044 667L829 0L667 0L529 481L391 0L229 0L13 667L160 667Z"  horiz-adv-x="1057" vert-adv-y="1000"  />
+
+    
+    <glyph glyph-name="uni62" unicode="&#x62;" d="M199 487L317 487Q395 487 444 463Q511 430 541 362Q562 311 562 250Q562 102 455 36Q421 15 385 7.50Q349 0 283 0L65 0L65 667L199 667L199 487M199 383L199 104L298 104Q361 104 393 143Q425 185 425 246Q425 383 298 383L199 383Z"  horiz-adv-x="596" vert-adv-y="1000"  />
+
+    
+    <glyph glyph-name="uni6d" unicode="&#x6d;" d="M65 487L557 487Q624 487 659 477Q694 467 718 442Q762 394 762 310L762 0L628 0L628 289Q628 324 625 338Q622 352 611 363Q590 383 548 383L477 383L477 0L343 0L343 383L199 383L199 0L65 0L65 487Z"  horiz-adv-x="822" vert-adv-y="1000"  />
+
+    
+    <glyph glyph-name="uni7a" unicode="&#x7a;" d="M312 383L30 383L30 487L489 487L489 386L207 104L489 104L489 0L30 0L30 101L312 383Z"  horiz-adv-x="526" vert-adv-y="1000"  />
+
+    
+
+  </font>
+</defs></svg>
