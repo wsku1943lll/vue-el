@@ -38,7 +38,7 @@
         methods:{
             onsubmit(){
                 this.$axois({
-                    method:'post',
+                    method:'post', 
                     url:'http://localhost/api/login',
                     data:qs.stringify({
                         username:this.form.username,
