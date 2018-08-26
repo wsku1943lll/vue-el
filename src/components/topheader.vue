@@ -11,6 +11,11 @@
 </script>
 
 <style scoped>
+    .topheader{
+        display: inline;
+        float: left;
+        width: 200px;
+    }
     @font-face {font-family: 'webfont';
         src: url('../assets/font/webfont.eot'); /* IE9*/
         src: url('../assets/font/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -20,9 +25,12 @@
     }
     .web-font{
         font-family:"webfont" !important;
-        font-size:20px;font-style:normal;
+        font-size:25px;font-style:normal;
         -webkit-font-smoothing: antialiased;
         -webkit-text-stroke-width: 0.2px;
         -moz-osx-font-smoothing: grayscale;
+        padding-top: 10px;
+        text-align: center;
+        display: block;
     }
 </style>

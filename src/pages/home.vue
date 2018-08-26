@@ -29,5 +29,6 @@
 <style scoped>
     .header{
         padding: 0;
+        background-color:gray;
     }
 </style>
