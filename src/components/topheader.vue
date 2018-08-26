@@ -3,7 +3,6 @@
         <div class="brand">
             <i class="web-font">CmbWz</i>
         </div>
-        <i class="el-icon-caret-left caret"></i>
     </div>
 </template>
 
@@ -21,9 +20,6 @@
     .brand{
         display: inline-block;
         width: 200px;
-    }
-    .caret{
-        font-size: 30px;
     }
     @font-face {font-family: 'webfont';
         src: url('../assets/font/webfont.eot'); /* IE9*/
