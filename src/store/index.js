@@ -10,8 +10,14 @@ Vue.use(Vuex);
 // };
 
 export default new Vuex.Store({
-    state: {},
-    mutations: {},
+    state: {
+    	sideWidth:"170px"
+	},
+    mutations: {
+    	toggleSideWidth(state){
+    		state.sideWidth=state.sideWidth==="170px"?"65px":"170px";
+		}
+	},
     actions: {},
     modules: {
         user

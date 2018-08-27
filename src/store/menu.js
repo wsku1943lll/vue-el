@@ -6,12 +6,12 @@ link:跳转地址
 sub:子菜单
 */
 export default [{
-        name: "菜单一",
+        name: "个人信息",
         logo: "el-icon-message",
         hasSub: true,
         link: "#",
         sub: [
-            { name: '小咖', hasSub: false, link: "#", logo: "el-icon-message", sub: [] },
+            { name: '信息修改', hasSub: false, link: "/home/npacul", logo: "el-icon-message", sub: [] },
             {
                 name: '大咖',
                 hasSub: true,

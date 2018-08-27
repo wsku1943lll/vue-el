@@ -6,7 +6,7 @@
         </el-header>
     </el-container>
     <el-container>
-        <el-aside width="200px">
+        <el-aside :width="sideWidth">
             <side-menu/>
         </el-aside>
         <el-main>
@@ -22,7 +22,12 @@
     import BottomFotter from "../components/btmfooter"
     export default {
         name: "home",
-        components: {TopHeader,SideMenu,BottomFotter}
+        components: {TopHeader,SideMenu,BottomFotter},
+        computed:{
+        	sideWidth(){
+        		return this.$store.state.sideWidth;
+            }
+        }
     }
 </script>
 
