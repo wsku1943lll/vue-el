@@ -1,7 +1,21 @@
-html,body{
+html,
+body {
     height: 100%;
     margin: 0;
     background-color: #e4e7e8;
     background-size: auto auto;
     background-origin: padding-box;
+}
+
+
+/*修改sidemenu的菜单样式*/
+
+.el-submenu__title {
+    height: 40px !important;
+    line-height: 40px !important;
+}
+
+.el-menu-item {
+    height: 40px !important;
+    line-height: 40px !important;
 }

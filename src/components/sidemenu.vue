@@ -1,7 +1,7 @@
 <template>
-    <el-menu v-if="menu_data.length>0" :collapse="isCollapse" router>
+    <el-menu v-if="menu_data.length>0" :collapse="isCollapse" router background-color="#333" text-color="#f8f9fa" >
         <template v-for="menu in menu_data" class="menu_main">
-            <el-submenu v-if="menu.hasSub" index="menu.name" :key="menu.name">
+            <el-submenu v-if="menu.hasSub" index="menu.name" :key="menu.name" >
                 <template slot="title"><i :class="menu.logo"></i><span slot="title">{{menu.name}}</span></template>
                 <template v-for="sub in menu.sub" :index="sub.name" class="menu_sec">
                     <el-submenu v-if="sub.hasSub" index="sub.name" :key="sub.name">
@@ -16,7 +16,7 @@
                 </template>
             </el-submenu>
             <el-menu-item v-else index="menu.name" :key="menu.name" :route="menu.link">
-                <i :class="menu.logo"></i><span slot="title">{{menu.name}}</span>
+                <i :class="menu.logo"></i><span slot="title" >{{menu.name}}</span>
             </el-menu-item>
         </template>
         <!-- 收起菜单按钮 -->
@@ -55,7 +55,7 @@
 <style scoped>
     .el-menu{
         height: calc(100vh - 50px);
-        font-size: 16px;
+        font-size: 14px;
     }
     .Collapse{
         float:right;

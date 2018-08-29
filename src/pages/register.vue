@@ -1,7 +1,7 @@
 <template>
     <div class="register">
         <el-card  class="reg-form" >
-            <el-form ref="form" :model="form" label-width="100px":rules="rules" >
+            <el-form ref="form" :model="form" label-width="100px" :rules="rules" >
                 <el-form-item label="用户名" prop="username">
                     <el-input v-model="form.username" placeholder="人事编号"/>
                 </el-form-item>
