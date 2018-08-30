@@ -1,12 +1,12 @@
 <template>
     <div class="register">
         <el-card  class="reg-form" >
-            <el-form ref="form" :model="form" label-width="100px":rules="rules" >
+            <el-form ref="form" :model="form" label-width="100px" :rules="rules" >
                 <el-form-item label="用户名" prop="username">
                     <el-input v-model="form.username" placeholder="人事编号"/>
                 </el-form-item>
-                <el-form-item label="密码" prop="pass">
-                    <el-input v-model="form.pass" type="password" />
+                <el-form-item label="密码" prop="password">
+                    <el-input v-model="form.password" type="password" />
                 </el-form-item>
                 <el-form-item label="确认密码" prop="checkpass">
                     <el-input v-model="form.checkpass" type="password" />
@@ -22,13 +22,15 @@
 </template>
 
 <script>
+    import {router} from '@/router'
+    import qs from 'qs'
     export default {
         name: "register",
         data(){
             return {
                 form:{
                     username:'',
-                    pass:'',
+                    password:'',
                     checkpass:''
                 },
                 rules:{
@@ -44,7 +46,25 @@
             submitForm(formName){
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
-                        alert('submit!');
+                        this.$axois({
+                            method:'post', 
+                            url:'http://localhost:8090/api/user/register',
+                            data:qs.stringify({
+                                username:this.form.username,
+                                password:this.form.password
+                            }),
+                            headers:{'Content-Type':'application/x-www-form-urlencoded'}
+                        }).then(rsp=>{
+                            if(rsp.data['code']==='0000') {
+                                // this.$store.commit('login', rsp.data);
+                                router.push('/home');
+                            }else{
+                                alert(rsp.data['message']);
+                                next(false);
+                            }
+                        }).catch(error=>{
+                            console.log(error);
+                        })
                     } else {
                         console.log('error submit!!');
                         return false;
