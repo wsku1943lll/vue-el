@@ -11,32 +11,34 @@ Vue.use(Router);
 export const router = new Router({
   routes: [
     {
-      path: '/',
-      redirect:'/home'
-    }, {
-      path: '/home',
-      name: 'Home',
-      component: Home,
-      children:[{
-          path:'score',
-          name:'Score',
-          component:Score
-      },{
-          path:'npacul',
-          name:'NPAcul',
-          component:NPA_Caculate
-      }
-      ]},
-      {
-          path:'/login',
-          name:'Login',
-          component:Login
-      },{
-          path:'/register',
-          name:'Register',
-          component:Register
-      }
-  ]
+        path: '/',
+        redirect:'/home'
+    }, 
+    {
+        path: '/home',
+        name: 'Home',
+        component: Home,
+        children:[{
+            path:'score',
+            name:'Score',
+            component:Score
+        },{
+            path:'npacul',
+            name:'NPAcul',
+            component:NPA_Caculate
+        }
+        ]
+    },
+    {
+        path:'/login',
+        name:'Login',
+        component:Login
+    },
+    {
+        path:'/register',
+        name:'Register',
+        component:Register
+    }]
 });
 
 router.beforeEach((to,from,next)=> {
