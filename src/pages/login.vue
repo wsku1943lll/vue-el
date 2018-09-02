@@ -48,7 +48,7 @@
                 }).then(rsp=>{
                     if(rsp.data['code']==='0000') {
                         //设置登录状态为true
-                        this.$store.commit('login', rsp.data);             
+                        this.$store.commit('login', rsp.data);
                         router.push('/home');
                     }else{
                         alert(rsp.data['message']);

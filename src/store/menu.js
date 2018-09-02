@@ -31,7 +31,7 @@ export default [{
         hasSub: true,
         link: "#",
         sub: [
-            { name: '机构设置', hasSub: false, link: "/home/brancfg", logo: "el-icon-if-fenxiaozhongxin", sub: [] }
+            { name: '机构设置', hasSub: false, link: "/home/gg", logo: "el-icon-if-fenxiaozhongxin", sub: [] }
         ]
     }
 ];

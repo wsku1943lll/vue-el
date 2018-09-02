@@ -11,11 +11,16 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
-        sideWidth: "220px"
+        sideWidth: "220px",
+        err_code: "",
+        err_message: ""
     },
     mutations: {
         toggleSideWidth(state) {
             state.sideWidth = state.sideWidth === "220px" ? "60px" : "220px";
+        },
+        setUpErrorPage(state, payload) {
+            err_code.err_code = payload.status;
         }
     },
     actions: {},
