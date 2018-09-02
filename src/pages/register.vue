@@ -22,6 +22,8 @@
 </template>
 
 <script>
+    import {router} from '@/router'
+    import qs from 'qs'
     export default {
         name: "register",
         data(){
@@ -44,7 +46,25 @@
             submitForm(formName){
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
-                        alert('submit!');
+                        this.$axois({
+                            method:'post', 
+                            url:'/api/user/register',
+                            data:qs.stringify({
+                                username:this.form.username,
+                                password:this.form.password
+                            }),
+                            headers:{'Content-Type':'application/x-www-form-urlencoded'}
+                        }).then(rsp=>{
+                            if(rsp.data['code']==='0000') {
+                                this.$store.commit('login', rsp.data);
+                                router.push('/home');
+                            }else{
+                                alert(rsp.data['message']);
+                                next(false);
+                            }
+                        }).catch(error=>{
+                            alert(error);
+                        })
                     } else {
                         console.log('error submit!!');
                         return false;

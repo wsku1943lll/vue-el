@@ -39,7 +39,7 @@
             onsubmit(){
                 this.$axois({
                     method:'post', 
-                    url:'http://localhost/api/login',
+                    url:'/api/user/login',
                     data:qs.stringify({
                         username:this.form.username,
                         password:this.form.password
@@ -47,7 +47,8 @@
                     headers:{'Content-Type':'application/x-www-form-urlencoded'}
                 }).then(rsp=>{
                     if(rsp.data['code']==='0000') {
-                        this.$store.commit('login', rsp.data);
+                        //设置登录状态为true
+                        this.$store.commit('login', rsp.data);             
                         router.push('/home');
                     }else{
                         alert(rsp.data['message']);

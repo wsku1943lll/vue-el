@@ -25,5 +25,13 @@ export default [{
             }
         ]
     },
-    { name: '菜单二', logo: "el-icon-menu", hasSub: false, link: "#", sub: [] }
+    {
+        name: '系统配置',
+        logo: "el-icon-menu",
+        hasSub: true,
+        link: "#",
+        sub: [
+            { name: '机构设置', hasSub: false, link: "/home/brancfg", logo: "el-icon-if-fenxiaozhongxin", sub: [] }
+        ]
+    }
 ];

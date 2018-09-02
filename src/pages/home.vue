@@ -7,6 +7,7 @@
     </el-container>
     <el-container>
         <el-aside :width="sideWidth">
+            <div class="side-inf">dashboard</div>
             <side-menu/>
         </el-aside>
         <el-main>
@@ -35,5 +36,13 @@
     .header{
         padding: 0;
         background-color:#fff;
+    }
+    .side-inf{
+        height: 100px;
+        background-image: url('../assets/img/side-sea.jpg');
+        filter: opacity(70%);
+    }
+    .side-inf:hover{
+        filter: opacity(90%);
     }
 </style>
