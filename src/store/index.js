@@ -20,7 +20,8 @@ export default new Vuex.Store({
             state.sideWidth = state.sideWidth === "220px" ? "60px" : "220px";
         },
         setUpErrorPage(state, payload) {
-            err_code.err_code = payload.status;
+            state.err_code = payload['code'];
+            state.err_message = payload['message']
         }
     },
     actions: {},

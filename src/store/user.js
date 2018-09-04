@@ -1,6 +1,6 @@
 const user = {
     state: {
-        isLogin: true,
+        isLogin: false,
         token: '',
         userId: '',
         userName: '',

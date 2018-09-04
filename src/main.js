@@ -9,7 +9,6 @@ import qs from 'qs'
 import 'element-ui/lib/theme-chalk/index.css'
 import './assets/icon/iconfont.css';
 import store from './store'
-import Axios from 'axios';
 
 Vue.use(ElementUI);
 Vue.config.productionTip = false;
@@ -40,14 +39,14 @@ Axois.interceptors.request.use(function(config) {
 //http响应401、404、403状态对应跳转地址
 Axois.interceptors.response.use(function(response) {
     // 对响应数据做点什么
-    console.log(response.status);
-    if (!(response.status === 200)) {
-        store.state.err_code = response.status;
-        store.state.err_message = response.statusText;
-        router.push("/home/error");
-    }
+    console.log('Has interceptors response');
+    // if (!(response.data['code'] === '0000')) {
+    //     store.commit('setUpErrorPage', response.data);
+    //     alert(response.data['message']);
+    // }
     return response;
 }, function(error) {
     // 对响应错误做点什么
+    router.push('/error');
     return Promise.reject(error);
 });

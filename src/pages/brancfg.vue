@@ -32,10 +32,10 @@
                         console.log(data);
                     }else{
                         alert(rsp.data['message']);
-                        next(false);
+                        // next(false);
                     }
                 }).catch(error=>{
-                    alert(error);
+                    console.log(error.message);
                 })
             }
         }
